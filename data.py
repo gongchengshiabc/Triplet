@@ -2,12 +2,6 @@ import os
 import torch.utils.data as data
 from PIL import Image
 import torch
-import torchvision.transforms as transforms
-
-transformations = transforms.Compose([
-        transforms.ToTensor(),
-        transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])
-    ])
 
 
 class DatasetProcessing(data.Dataset):
